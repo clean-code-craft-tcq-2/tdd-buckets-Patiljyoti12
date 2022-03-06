@@ -10,7 +10,7 @@ if __name__ == '__main__':
   start_range=4
   stop_range=5
   input_samples=[3,3,5,4]
-  test_no_of_readings_in_range(input_sample,start_range,stop_range,expected_result)
+  test_no_of_readings_in_range(input_samples,start_range,stop_range,expected_result)
 
   
   
