@@ -6,6 +6,7 @@ what range of currents are most often encountered while charging.
 
 > **DO NOT** jump into implementation! Read the example and the starting task below.
 
+
 ## Example
 
 ### Input
