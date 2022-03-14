@@ -1,7 +1,7 @@
 import numpy as np
 
 #sort the given input sequence
-def Rearrange_Samples(input_samples):
+def rearrange_samples(input_samples):
     input_samples.sort()
     return input_samples
     
@@ -25,7 +25,7 @@ def get_no_of_readings_in_range(samples_ranges):
     return result
 
 #to display the ranges and no of occurences 
-def Display_Samples_Details_onConsole(samples_ranges):
+def display_samples_details_onconsole(samples_ranges):
     count=get_no_of_readings_in_range(samples_ranges)
     message= (f"{samples_ranges[0]}-{samples_ranges[-1]}, {count}")
     return message
