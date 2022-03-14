@@ -7,7 +7,7 @@ def rearrange_samples(input_samples):
     
 #get the ranges from the given input sequence
 def get_ranges_from_samples(input_samples):
-    myarray =Rearrange_Samples(input_samples)
+    myarray =rearrange_samples(input_samples)
     sequences = np.split(myarray, np.array(np.where(np.diff(myarray) > 1)[0]) + 1)
     samples_ranges = []
     for s in sequences:
