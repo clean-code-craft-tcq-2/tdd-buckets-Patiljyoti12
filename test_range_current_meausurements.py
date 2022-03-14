@@ -12,7 +12,7 @@ class TypewiseTest(unittest.TestCase):
     def test_get_ranges_from_samples(self):
         self.assertTrue(range_current_measurements.get_ranges_from_samples([3, 3, 5, 4, 10, 11, 12]) == [(3,5),(10,12)])
      
-    def test_get_no_of_readings_in_range(self)
+    def test_get_no_of_readings_in_range(self):
         self.assertTrue(range_current_measurements.get_no_of_readings_in_range([10,11,12])==3)
 
 
