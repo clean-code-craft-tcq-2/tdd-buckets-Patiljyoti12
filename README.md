@@ -51,3 +51,26 @@ Start Test-driven approach
 1. Write the smallest possible failing test: give input `4,5`. assert output to be `4-5, 2`.
 1. Write the minimum amount of code that'll make it pass.
 1. Refactor any assumptions, continue to pass this test. Do not add any code without a corresponding test.
+
+#---------------------------------------------------------------------------------------------
+Test Specification
+ 
+range_current_measusrements -development source code
+test_range_current_measurements-test code
+
+1.rearrange_samples(input_samples)
+This method takes charging current samples from one session as input and returns the sorted sequence of samples
+Input:
+It can be a list with 'n' of elements
+Valid Inputs: a) each element in list should be > 0 b) elememts in an list can be consecutive or non-consecutive
+Invalid Inputs: a) Empty array b) Negative elements
+
+2.get_ranges_from_samples(input_samples)
+This method takes sorted sequence of samples as input and returns all possible ranges from sorted sequence of samples 
+
+3.get_no_of_readings_in_range(samples_ranges)
+This method takes range as input and list the total no of occurances of elements in given range 
+
+4. display_samples_details_onconsole(samples_ranges)
+This method takes range as input and counts the no of elements within the range and displays the result in csv format 
+
