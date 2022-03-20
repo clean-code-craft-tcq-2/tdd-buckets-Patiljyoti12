@@ -15,7 +15,6 @@ def get_ranges_from_samples(input_samples):
             samples_ranges.append((np.min(s), np.max(s)))
         else:
             samples_ranges.append(s[0])
-    print(samples_ranges)
     return samples_ranges
    
 
@@ -28,6 +27,7 @@ def get_no_of_readings_in_range(samples_ranges):
 def display_samples_details_onconsole(samples_ranges):
     count=get_no_of_readings_in_range(samples_ranges)
     message= (f"{samples_ranges[0]}-{samples_ranges[-1]}, {count}")
+    print(message)
     return message
   
 
