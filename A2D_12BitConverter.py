@@ -1,3 +1,4 @@
+import range_current_measurements
 
 def converttoAmps(input_samples):
     valid_samples = [sample for sample in input_samples if sample <= 4094]
@@ -8,3 +9,8 @@ def Check_InValidSamplesandPrintErrorMessage(input_samples):
     invalid_samples = [sample for sample in input_samples if sample > 4094]
     message="Samples out of range"
     return message
+
+def GetSampleRangesFrom_A2D(input_samples):
+    valid_input_samples=converttoAmps(input_samples)
+    sample_ranges = range_current_measurements.get_ranges_from_samples(valid_input_samples)
+    return sample_ranges
