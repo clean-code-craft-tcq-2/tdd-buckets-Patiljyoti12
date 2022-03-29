@@ -74,3 +74,10 @@ This method takes range as input and list the total no of occurances of elements
 4. display_samples_details_onconsole(samples_ranges)
 This method takes range as input and counts the no of elements within the range and displays the result in csv format 
 
+A2D Converter 
+A2D_12BitConverter.py -source code 
+test_range_current_measurements-test code
+converttoAmps(input_samples)
+This method takes input samples as input  and then identifies only valid samples within 4094 in the given input sample list and returns converted to Amp value for the
+valid samples as output
+This is tested in 
