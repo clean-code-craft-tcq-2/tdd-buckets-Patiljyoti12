@@ -1,5 +1,6 @@
 import unittest
 import range_current_measurements
+import A2D_12BitConverter
 
 
 class TypewiseTest(unittest.TestCase):
