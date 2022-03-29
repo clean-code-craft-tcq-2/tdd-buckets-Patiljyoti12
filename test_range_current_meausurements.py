@@ -22,6 +22,9 @@ class TypewiseTest(unittest.TestCase):
                                                                                     
     def test_converttoAmps(self):
         self.assertTrue(A2D_12BitConverter.converttoAmps([1100, 1802, 3530, 2555, 2000, 3200, 4094]) == [3, 4, 9, 6, 5, 8, 10])
+        
+    def test_GetSampleRangesFrom_A2D(self):
+        self.assertTrue(A2D_12BitConverter.GetSampleRangesFrom_A2D([1100, 1802, 3530, 2555, 2000, 3200, 4094]) == [(3, 6), (8, 10)])
     
 
 
