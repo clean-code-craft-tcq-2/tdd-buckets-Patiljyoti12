@@ -18,7 +18,7 @@ class TypewiseTest(unittest.TestCase):
         self.assertTrue(range_current_measurements.get_no_of_readings_in_range([10,11,12])==3)
     
     def test_Check_InValidSamplesandPrintErrorMessage(self):
-        self.assertTrue(A2D_12BitConverter.Check_InValidSamplesandPrintErrorMessage([4095]==""Samples out of range")
+        self.assertTrue(A2D_12BitConverter.Check_InValidSamplesandPrintErrorMessage([4095]=="Samples out of range")
                                                                                     
     def test_converttoAmps(self):
         self.assertTrue(A2D_12BitConverter.converttoAmps([1100, 1802, 3530, 2555, 2000, 3200, 4094]) == [3, 4, 9, 6, 5, 8, 10])
